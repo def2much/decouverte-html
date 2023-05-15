@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+    
+    <html lang="fr">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Découverte HTML - Accueil</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+            <link rel="stylesheet" href="css/main.css">
+        
+        </head>
+
+        <body>
+            <!-- Navigation -->
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i>Accueil</a>
+                </li>
+            
+                <li>
+                    <a href="images.html"><i class="fa-regular fa-image"></i>Images</a>
+                </li>
+            
+                <li>
+                    <a href="galerie-tableaux.html"><i class="fa-solid fa-chess-board"></i>Galerie et tableaux</a>
+                </li>
+
+                <li>
+                    <a href="Galerie.html"><i class="fa-solid fa-chalkboard-user"></i>Galerie</a>
+                </li>
+            
+                <li>
+                    <a href="listings.html"><i class="fa-solid fa-list"></i>Listing</a>
+                </li>
+            
+                <li>
+                    
+                    <a href="contact.html"><i class="fa-regular fa-address-book"></i>Contact</a>
+                
+                </li>
+
+                <li>
+                    
+                    <a href="formulaires.html"><i class="fa-solid fa-table-list"></i>Formulaires</a>
+                
+                </li>
+            
+                <li>
+                    
+                    <a href="A propos.html"><i class="fa-solid fa-address-card"></i>A propos</a>
+                
+                </li>
+            
+            
+            </ul>
+           
+           <h1>Formulaires</h1>
+
+           <form action="form.php" method="post">
+              <div class="form">
+
+                  <label for="name">Entrez votre nom</label>           
+                  <input type="text" id="name" name="name">
+              <div class="form">
+
+                  <label for="password">Entrez votre mdp</label>
+                  <input type="password" id="password" name="password">
+
+              </div>
+              
+              <div class="form">
+
+                  <label>Entrez votre mail</label>
+                  <input type="email" id="email" name="email">
+
+              </div>
+              
+                
+              <div class="form">
+                    
+                <input type="submit" value="Envoyer"><i class="fa-solid fa-car"></i>
+                
+                <button type="submit"><i class="fa-solid fa-car"></i>Envoyer</button>
+                    
+                
+                
+                </div>
+            
+            </form>
+           
+           <h2>Formulaire d'inscription</h2>
+           
+           <form action="" method="post" class="form1">
+               
+                <fieldset>
+                    <legend>Informations personelles</legend>
+                    <div class="form">
+                        <label for="nom">Nom de famille</label>
+                        <input type="text" id="nom" name="nom">
+                    </div>
+                    <div class="form">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom">
+                    </div>
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form">
+                        <label for="tel">Téléphone</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>    
+                    <div class="form">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age">
+                    </div>
+                    <div class="form">
+                        <input type="radio" id="f" name="genre" value="f">
+                        <label for="f">Femme</label>
+                        <input type="radio" id="h" name="genre" value="h">
+                        <label for="h">Homme</label>
+                        <input type="radio" id="nsp" name="genre" value="nsp">
+                        <label for="nsp">Ne se prononce pas</label>
+                    </div>
+                    <div class="form">
+                        <label for="pays">Pays de résidence</label>
+                        
+                        <select name="pays" id="pays">
+                        
+                            <optgroup label="Europe">
+                                <option value="france">France</option>
+                                <option value="belgique">Belgique</option>
+                                <option value="espagne">Espagne</option>
+                            </optgroup>
+                            <optgroup label="Asie">
+                                <option value="japon">Japon</option>
+                                <option value="chine">Chine</option>
+                                <option value="vietnam">Vietnam</option>
+                            </optgroup>
+                            <optgroup label="Afrique">
+                                <option value="tunisie">Tunisie</option>
+                                <option value="benin">Benin</option>
+                                <option value="egypte">Egypte</option>
+                            </optgroup>
+                        </select>
+                    </div>
+               </fieldset>
+
+               <fieldset>
+                    
+                    <legend>
+                        Expériences et compétences</legend>
+                        <div class="form">
+                            <input type="checkbox" id="html" name="skills" value="html">
+                            <label for="html">HTML</label>
+                            <input type="checkbox" id="css" name="skills" value="css">
+                            <label for="css">CSS</label>
+                            <input type="checkbox" id="js" name="skills" value="js">
+                            <label for="js">Javascript</label>
+                            <input type="checkbox" id="php" name="skills" value="php">
+                            <label for="php">PHP</label>
+                            <input type="checkbox" id="sql" name="skills" value="sql">
+                            <label for="sql">SQL</label>
+                        </div>
+
+                        <div class="form">
+                            
+                            <textarea name="exp" id="exp" cols="30" rows="10" placeholder="Décrivez l'une de vos expériences professionnelles"></textarea>
+                        
+                        </div>
+                    
+               
+                </fieldset>
+           
+                <fieldset>
+                    
+                    <legend>
+                        Rendez vous
+                    </legend>
+                    
+                    <div class="form">
+                        
+                        <label for="date">Choisir une date de rendez vous :</label>
+                        <input type="datetime-local" name="date" id="date">
+                    
+                    </div>
+                
+                </fieldset>
+
+                <fieldset>                    
+                    
+                    <legend>CV</legend>
+                    
+                    <div class="form">
+                    
+                        <label for="cv">Transmettre votre CV :</label>
+                        <input type="file" name="cv" id="cv">
+                    
+                    </div>
+                
+                </fieldset>
+
+                <fieldset>
+                    
+                    <legend>
+                        Mot de passe
+                    </legend>
+                    
+                    <div class="form">
+                    
+                        <label for="password">Votre mot de passe</label>
+                        <input type="password">
+                        <button type="submit" class="btn">Envoyer</button>
+                    
+                    </div>
+                    
+                </fieldset>
+
+
+            </form>
+
+            <h2>Inscription</h2>
+            <h2>Connexion</h2>
+            <h2>Questions/Réponses</h2>
+
+            <form action="" method="post" class="form2">
+                
+                <fieldset>
+                    
+                    <legend>
+                    
+                        Formulaire d'inscription
+                    
+                    </legend>
+                    
+                    <div>
+                        
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom">
+                    
+                    </div>
+                    
+                    <div>
+                        
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom">
+                    
+                    </div>
+                    
+                    <div>
+                        
+                        <label for="mail">Email</label>
+                        <input type="text" id="mail" name="mail">
+                    
+                    </div>
+                    
+                    <div>
+                        
+                        <label for="tel">Téléphone</label>
+                        <input type="text" id="tel" name="tel">
+                    
+                    </div>
+                
+                    <div>
+                        
+                        <label for="age">Âge</label>
+                        <input type="text" id="age" nom="age">
+
+                    </div>
+
+                    <div>
+                    
+                        <input type="radio" id="h" name="genre" value="h">
+                        <label for="h">Homme</label>
+                        <input type="radio" id="f" name="genre" value="f">
+                        <label for="f">Femme</label>
+                        <input type="radio" id="nsp" name="genre" value="nsp">
+                        <label for="nsp">Ne se prononce pas</label>
+                    
+                    </div>
+
+
+
+                </fieldset>
+
+                
+
+
+
+                <fieldset>
+
+                    <legend>
+                    
+                        Connexion
+                    
+                    </legend>
+
+                    <div>
+                        
+                        <input type="text" id="userid" name="userid">
+                        <label for="userid">Identifiant</label>
+                    
+                    </div>
+                    
+                    <div>
+                        
+                        <input type="text" id="password" name="password">
+                        <label for="password">Mot de Passe</label>
+                    
+                    </div>
+                    
+                    <div>
+                        
+                        <input type="submit">
+                    
+                    </div>
+
+                </fieldset>
+
+                
+
+                <fieldset>
+
+                    <legend>
+                        Questionnaire
+                    </legend>
+                    
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Qui vous a parlé de cette formation?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q1" id="q1" cols="30" rows="10" placeholder="Votre réponse ici"></textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Qu'est-ce-que vous veniez chercher à cette formation?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q2" id="q2" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Qu'y avez-vous trouvé?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q3" id="q3" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Comment êtes-vous rentré en formation?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q4" id="q4" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Quand avez-vous envisagé cette formation?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q5" id="q5" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Où s'est déroulé cette formation?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q6" id="q6" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Combien de cours avez-vous reçu en formation et lesquels?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q7" id="q7" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Pourquoi avez-vous voulu faire cette formation?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+                    
+                    <textarea name="q8" id="q8" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                    <div>
+                        
+                        <p>
+                            
+                            <b>
+
+                                Quel est votre ressenti par rapport à la formation?
+
+                            </b>
+                        
+                        </p>
+                    
+                    </div>
+
+                    <textarea name="q9" id="q9" cols="30" rows="10" placeholder="Votre réponse ici">
+
+                    </textarea>
+
+                </fieldset>
+
+            </form>
+            <!--Contenu-->
+        </body>
+
+
+
+
+    </html>

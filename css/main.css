@@ -1,0 +1,47 @@
+
+ ul {
+
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+
+}
+
+ li {
+
+    list-style: none;
+    padding: 0 15px;
+
+}
+
+
+
+
+img {
+    
+    width: 50%;
+    
+}
+
+
+div.img-container {
+
+    text-align: center;
+    
+}
+
+.form2 {
+
+        display: flex;
+        justify-content: center;
+
+}
+
+h2{
+
+    display: inline;
+    
+
+}
